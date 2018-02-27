@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>'Userprofile'</title>
+    </head>
+    <body>
+            <a href='/'><h3>HOME</h3></a>
+            <br>
+        <h3>Register yourself</h3>
+            <form action="/signup" method="POST">
+                Choose Username:<br>
+                <input type="text" id='usrname' name='usrname' placeholder='username'>
+                <br><br>
+                Choose Password:<br>
+                <input type="text" id="pswrd" name='pswrd' placeholder='password'>
+                <br>
+                <p id='error'><%=errormsg%> </p><br>
+                ReEnter Password:<br>
+                <input type="text" id="repswrd" name='repswrd' placeholder='password'>
+                <br><br>
+                
+               <!-- <input type='submit' id='submit' name='submit'>-->
+               <button>Submit</button>
+            </form> 
+    </body>
+</html>

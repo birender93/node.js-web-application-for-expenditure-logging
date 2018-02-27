@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>'Userprofile'</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("input").focus(function(){
+                    $(this).css("background-color", "#cccccc");
+                });
+                $("input").blur(function(){
+                    $(this).css("background-color", "#ffffff");
+                });
+            });
+            </script>
+    </head>
+    <body>
+            <a href='/'><h3>HOME</h3></a>
+            <br>
+            <form action="/login" method="POST">
+                Username:<br>
+                <input type="text" id='usrname' name='usrname' placeholder='username'>
+                <br>
+                Password:<br>
+                <input type="text" id="pswrd" name='pswrd' placeholder='password'>
+                <br><br>
+               <!-- <input type='submit' id='submit' name='submit'>-->
+               <button>Submit</button>
+            </form> 
+    </body>
+</html>
